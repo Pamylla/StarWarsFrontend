@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title> Search Films From SWAPI </title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <audio controls>
+      <source src="./src/Galactic_Empire_Star_Wars_Metal_The_Imperial_March.mp3" type="audio/mpeg" style="position: fixed">
+    </audio>
+    <div class="caixa" id='caixa'></div> 
+    <template id="cardTop">
+          <div class="card">
+            <div class="card-image"></div>
+            <div> 
+              <div class="card-text">Film:</div>
+              <h1 class="card-text titulo"></h1>
+              <span class="card-text resumo"></span> 
+            </div>
+            <div class="card-stats">
+              <div class="stat">
+                <div class="type">Episode:</div>
+                <div class="value id"></div>
+              </div>
+              <div class="stat border">
+                <div class="type">Release date:</div>
+                <div class="value release"></div>
+              </div>
+              <div class="stat">
+                <div class="value icon"></div>
+                <img src="./src/1.png" width= "50px"></div>
+              </div>
+            </div>
+          </div> 
+    </template>
+
+    <script src='main.js'></script>
+  </body>
+</html>
